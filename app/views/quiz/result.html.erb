@@ -1,0 +1,6 @@
+<h1>結果</h1>
+<p>あなたのスコアは<%= @score %>点です！</p>
+
+<%= link_to "Twitterで共有する", "https://twitter.com/share?url=#{request.original_url}&text=私のFate宝具クイズスコアは#{@score}点でした！", target: "_blank" %>
+<br>
+<%= link_to "リトライ", root_path %>

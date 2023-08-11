@@ -1,0 +1,6 @@
+<h1>問題<%= @current_question_number %></h1>
+<p><%= @question.name %></p>
+<%= form_with url: answer_quiz_index_path(id: @current_question_number), method: :post do |form| %>
+  <%= form.text_field :answer, placeholder: "ここにルビを入力" %>
+  <%= form.submit "回答" %>
+<% end %>
